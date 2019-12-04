@@ -12,9 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
+    @IBAction func onOpenScreenTouched(_ sender: UIButton) {
+        //Open Texture screen here
+        let helloVC = HelloViewController()
+         self.navigationController?.pushViewController(helloVC, animated: true)
+//        present(helloVC, animated: true, completion: nil)
+    }
 
 }
 
